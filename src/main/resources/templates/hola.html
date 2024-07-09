@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <table>
+        <tbody>
+            <tr th:each="nombre: ${nombres}">
+                <td th:text="${nombre.id}" />
+                <td th:text="${nombre.nombre}" />
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
